@@ -1,0 +1,118 @@
+.header {
+	display: grid;
+	grid-template-columns: 1fr auto auto auto;
+	align-items: center;
+	padding: 48px 0 17px 0;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.logo {
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 40.5px;
+	color: inherit;
+}
+
+.slogo {
+	color: #a18a68;
+}
+
+.nav {
+	display: flex;
+	gap: 60px;
+	border-right: 1px solid #707070;
+	padding-right: 60px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+.searchButton {
+	margin: 0 39px 0 62px;
+	cursor: pointer;
+}
+
+.search {
+	margin: 0 22px;
+	width: 288px;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	gap: 39px;
+	/* предложенный вариант не сработал!!*/
+
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.cart,
+.favorites {
+	position: relative;
+}
+
+.cartCount {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background: #ffffff;
+	border-radius: 50%;
+	border: 1px solid #000000;
+	padding: 4px;
+	font-size: 7px;
+	font-weight: 400;
+	line-height: 3.77px;
+	display: none;
+}
+
+.mobileMenuOpen,
+.mobileMenuClose,
+.mobileMenu,
+.searchMobile {
+	display: none;
+}
+
+/*насколько много допускается применть медиа? разверни поиск и начни уменьшать разрешение. Как по мне там надо еще 1-2 медиа делать*/
+
+@media (max-width: 860px) {
+	.header {
+		display: grid;
+		grid-template-columns: 1fr auto auto;
+		grid-template-rows: auto auto;
+		align-items: center;
+		padding: 15px 0;
+		border-bottom: none;
+	}
+
+	.logo {
+		font-size: 25px;
+	}
+
+	.icons {
+		gap: 16px;
+	}
+
+	.nav,
+	.searchButton,
+	.search,
+	.favorites,
+	.login {
+		display: none;
+	}
+
+	.cartCount,
+	.mobileMenuOpen,
+	.mobileMenuClose,
+	.mobileMenu {
+		display: block;
+	}
+
+	.searchMobile {
+		display: block;
+		grid-column: 1 / -1;
+	}
+}

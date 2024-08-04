@@ -1,0 +1,9 @@
+.iconSearch {
+	margin: 0;
+	cursor: pointer;
+}
+
+/*не работает. как реализовать???*/
+.iconSearchActive {
+	fill: #000000;
+}

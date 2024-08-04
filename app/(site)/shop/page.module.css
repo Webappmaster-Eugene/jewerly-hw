@@ -1,0 +1,21 @@
+.main {
+	padding: 96px 0 164px 0;
+	margin: auto;
+}
+
+.title {
+	font-size: 33px;
+	font-weight: 500;
+	line-height: 43px;
+	text-align: left;
+	margin: 0 0 39px 0;
+}
+
+.wrapperFilter {
+	display: flex;
+	gap: 35px;
+}
+
+.wrapperCatalog {
+	flex-grow: 1;
+}

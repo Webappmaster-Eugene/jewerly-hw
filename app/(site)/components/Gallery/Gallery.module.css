@@ -1,0 +1,123 @@
+.gallery {
+	position: relative;
+	color: #ffffff;
+}
+
+/*не понял как измеить пропорции на адаптив*/
+.image {
+	border-radius: 16px;
+	width: 100%;
+	height: 100%;
+}
+
+.info {
+	position: absolute;
+	bottom: 50%;
+	left: 39px;
+	transform: translateY(50%);
+	text-align: left;
+}
+
+.productName {
+	font-size: 33px;
+	font-weight: 500;
+	line-height: 43px;
+	margin-bottom: 16px;
+}
+
+.productPrice {
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 35px;
+	margin-bottom: 48px;
+}
+
+.linkProduct {
+	display: block;
+	width: 239px;
+	border-radius: 6px;
+	border: 2px solid #ffffff;
+	padding: 11px 23px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.controls {
+	display: flex;
+	gap: 14px;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	bottom: 24px;
+	transform: translateX(-50%);
+}
+
+.controlDot {
+	width: 9px;
+	height: 9px;
+	background: #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.controlDot.active {
+	width: 16px;
+	height: 16px;
+	background: none;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 1px solid #ffffff;
+}
+
+@media (max-width: 860px) {
+	.image {
+		border-radius: 8px;
+		object-fit: cover;
+	}
+
+	.info {
+		bottom: 26px;
+		left: 8px;
+		transform: translateY(0%);
+	}
+
+	.productName {
+		font-size: 20px;
+		line-height: 26px;
+		margin-bottom: 3px;
+	}
+
+	.productPrice {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 10px;
+	}
+
+	.linkProduct {
+		width: 92px;
+		border-radius: 4px;
+		border: 1px solid #ffffff;
+		padding: 6px 9px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+
+	.controls {
+		gap: 6px;
+		bottom: 8px;
+	}
+
+	.controlDot {
+		width: 4px;
+		height: 4px;
+	}
+
+	.controlDot.active {
+		width: 7px;
+		height: 7px;
+	}
+}

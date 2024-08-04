@@ -1,0 +1,75 @@
+:root {
+	--font-family-primary: 'DM Sans';
+	--font-family-logo: 'Allerta Stencil';
+
+	--background-primary: #ffffff;
+
+	--color-text-primary: #000000;
+
+	--font-size1: 7px;
+	--font-size2: 12px;
+	--font-size-body-medium: 14px;
+	--font-size-heading-5: 16px;
+	--font-size5: 18px;
+	--font-size-heading-3-4: 20px;
+	--font-size-heading-2: 26px;
+	--font-size8: 28px;
+	--font-size-heading-1: 33px;
+
+	--font-weight1: 400;
+	--font-weight2: 500;
+	--font-weight3: 700;
+
+	--line-height1: 3.77px;
+	--line-height2: 15.62px;
+	--line-height3: 20px;
+	--line-height4: 20.83px;
+	--line-height5: 22px;
+	--line-height6: 25px;
+	--line-height7: 26px;
+	--line-height8: 26.04px;
+	--line-height9: 27px;
+	--line-height10: 35px;
+	--line-height11: 40.5px;
+	--line-height12: 43px;
+
+	--color1: #ffffff;
+	--color2: #707070;
+	--color3: #a18a68;
+	--color4: #d82700;
+
+	--background2: #efefef;
+	--background3: #000000;
+	--background4: #707070;
+
+	--background5: #d8d8d8;
+	--background: #efefef;
+	--background: #efefef;
+
+	--border1: #d8d8d8;
+}
+
+html,
+body {
+	background: var(--background-primary);
+	color: var(--color-text-primary);
+	font-family: var(--font-family-primary);
+}
+
+body {
+	margin: auto;
+	padding: 0 96px;
+	min-height: 100vh;
+	max-width: 1248px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@media (max-width: 860px) {
+	body {
+		padding: 0 16px;
+	}
+}

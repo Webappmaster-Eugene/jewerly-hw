@@ -1,0 +1,31 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 39px;
+	text-align: center;
+	padding: 15px 0 250px 0;
+	margin: auto;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 33px;
+	font-weight: 500;
+	line-height: 43px;
+	text-align: left;
+	margin: 0;
+}
+
+.button {
+	border: none;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 26px;
+	background: none;
+	cursor: pointer;
+	color: #a18a68;
+}

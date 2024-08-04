@@ -1,0 +1,22 @@
+.input {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 27px;
+	flex-grow: 1;
+	font-family: var(--font-family-primary);
+	padding: 0;
+}
+
+.input::placeholder {
+	color: #707070;
+}
+
+@media (max-width: 1200px) {
+	.input {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
